@@ -48,8 +48,10 @@ function Signuppage(){
 
     const res = await fetch("https://vhongdrip.free.nf/api/signup.php", {
         method: "POST",
+        credentials: "include", 
         body: formData
     });
+
 
     const data = await res.json();
 
