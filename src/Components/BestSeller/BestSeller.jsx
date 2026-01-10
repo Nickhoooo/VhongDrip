@@ -4,7 +4,7 @@ import "./BestSeller.css";
 function BestSeller(){
     const [products, setProducts] = useState([]);
 
-fetch("http://localhost/VhongWebsite/backend/api/getProducts.php")
+fetch("https://vhongdrip.free.nf/api/getProducts.php")
   .then(res => res.json())
   .then(data => setProducts(data))
   .catch(err => console.log("ERROR:", err));

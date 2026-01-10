@@ -10,13 +10,13 @@ function RecomProduct(){
 
     useEffect(() => {
    
-        fetch("http://localhost/VhongWebsite/backend/api/getProducts.php")
+        fetch("https://vhongdrip.free.nf/api/getProducts.php")
         .then(res => res.json())
         .then(data => setProducts(data))
         .catch(err => console.log("ERROR: ", err));
 
 
-        fetch(`http://localhost/VhongWebsite/backend/api/getProductbyId.php?id=${id}`)
+        fetch(`https://vhongdrip.free.nf/api/getProductbyId.php?id=${id}`)
         .then(res => res.json())
         .then(data => setCurrentProduct(data))
         .catch(err => console.log("ERROR: ", err));

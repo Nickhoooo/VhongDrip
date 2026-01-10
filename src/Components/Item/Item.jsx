@@ -24,7 +24,7 @@ function Item({ product }){
 
     return(
         <div className="Item-Card">
-            <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+            <img src={`https://vhongdrip.free.nf/backend/images/${product.image}`} alt={product.name} />
             <p id="Product-Name">{product.name}</p>
             <p id="Price">₱{product.price}</p>
             <div className="Buttons-container">

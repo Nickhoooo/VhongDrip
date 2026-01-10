@@ -14,7 +14,7 @@ function ProductDetails(){
   
 
     useEffect(() => {
-        fetch(`http://localhost/VhongWebsite/backend/api/getProductbyId.php?id=${id}`)
+       fetch(`https://vhongdrip.free.nf/api/getProductbyId.php?id=${id}`)
         .then(res => res.json())
         .then(data => setProduct(data))
         .catch(err => console.log("ERROR: ", err));

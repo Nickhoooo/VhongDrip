@@ -18,7 +18,7 @@ function PromoMain(){
     const [promo, setPromo] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost/VhongWebsite/backend/api/getPromoproduct.php")
+        fetch("https://vhongdrip.free.nf/api/getPromoproduct.php")
         .then(res => res.json())
         .then(data => setPromo(data))
         .catch(err => console.log("ERROR: ", err));

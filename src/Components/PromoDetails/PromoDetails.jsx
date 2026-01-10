@@ -23,7 +23,7 @@ function PromoDetails() {
   }, []);
 
   useEffect(() => {
-    fetch(`http://localhost/VhongWebsite/backend/api/getPromoproduct.php?id=${id}`)
+    fetch(`https://vhongdrip.free.nf/api/getPromoproduct.php?id=${id}`)
       .then(res => res.json())
       .then(data => {
         console.log(data); // check structure
