@@ -1,0 +1,132 @@
+.Main-BestSeller{
+    width: auto;
+    height: 600px;
+    font-family: poppins;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .Main-BestSeller p{
+        font-size: 30px;
+        font-weight: 400;
+        color: black;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+    .Main-BestSeller hr{
+        width: 350px;
+        height: 5px;
+        border-radius: 10px;
+        background: #252525;
+        border: none; 
+    }
+
+.BestSelller-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 50px;
+    }
+    .Child-container{
+        height: 400px;
+        width: 200px;
+    }
+
+    @media (max-width: 1024px){
+
+        .Main-BestSeller{
+        width: auto;
+        height: 600px;
+        font-family: poppins;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .Main-BestSeller p{
+        font-size: 25px;
+        font-weight: 400;
+        color: black;
+        }
+        .Main-BestSeller hr{
+        width: 300px;
+        height: 4px;
+        border-radius: 10px;
+        background: #252525;
+        border: none; 
+        }
+
+        .BestSelller-Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 90px;
+        margin-top: 50px;
+        }
+
+    }
+    @media (max-width: 786px){
+        .Main-BestSeller{
+        width: auto;
+        height: 500px;
+        font-family: poppins;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+        .Main-BestSeller p{
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        }
+        .Main-BestSeller hr{
+        width: 250px;
+        height: 2px;
+        border-radius: 10px;
+        background: black; 
+        border: none; 
+        }
+
+        .BestSelller-Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        }
+    }
+    @media (max-width: 480px){
+        .Main-BestSeller{
+        width: auto;
+        min-height: auto;
+        font-family: poppins;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-items: center;
+        }
+        .Main-BestSeller p{
+        font-size: 18px;
+        font-weight: 400;
+        color: black;
+        }
+        .Main-BestSeller hr{
+        width: 200px;
+        height: 2px;
+        border-radius: 10px;
+        background: #080808;
+       
+        }
+
+        .BestSelller-Container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        }
+        #trd-child{
+            display: none;
+        }
+    }

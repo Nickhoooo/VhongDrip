@@ -1,0 +1,427 @@
+
+
+.Header {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px -2px rgb(8, 8, 8);
+    padding: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(255, 255, 255, 0.3); 
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    position: fixed;
+    top: 10px;          
+    left: 50%;         
+    transform: translateX(-50%);  
+    padding: 10px;
+    padding-left: 30px;
+}
+
+
+
+nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+nav a{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+nav a :hover{
+    color: rgb(185, 30, 30);
+}
+
+.LogoName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.Logoname-Container{
+    display: flex;
+    flex-direction: column; 
+}
+.Logoname-Container span{
+    display: inline-block;
+    font-family: poppins;
+    font-size: 12px;
+    margin: 0;
+}
+.Logoname-Container p{
+    margin: 0;
+    font-family: poppins;
+    color: #000000;
+}
+.LogoName img{
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+    padding-top: 5px;
+}
+.LogoName p{
+    color: aliceblue;
+}
+.buttons-header{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.auth-wrapper {
+  position: relative;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.burger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+
+    #Login-button{
+        width: 90px;
+        height: 25px;
+        background-color: #edf0ed;
+        color: rgb(5, 5, 5);
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 10px;
+        margin-right: 5px;
+        overflow: hidden;
+        transition: 
+            background-color 0.3s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+    #LogOut-Button{
+        width: 90px;
+        height: 25px;
+        background-color: #2c2a2a;
+        color: rgb(238, 230, 230);
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 10px;
+        margin-right: 5px;
+        overflow: hidden;
+        transition: 
+            background-color 0.3s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+   
+
+     #Signup-Button{
+        width: 90px;
+        height: 25px;
+        background-color: rgb(7, 7, 7);
+        color: rgb(238, 232, 232);
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 10px;
+        margin-right: 5px;
+        overflow: hidden;
+        transition: 
+            background-color 0.3s ease,
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+   
+   
+
+    .buttons-header img{
+        margin-right: 30px;
+    }
+    .CartCount{
+        width: 15px;
+        height: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: -40px;
+        border-radius: 11px;
+        font-size: 10px;
+        background-color: red;
+        color: #ffffff;
+        
+    }
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .LogoName{
+         font-size: 15px;
+         font-weight: 500;
+     }
+    .Logoname-Container span{
+        font-size: 10px;
+        margin: 0;
+    }
+     nav a{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    #LogOut-Button{
+        width: 80px;
+        height: 25px;
+        font-size: 9px;  
+        margin-left: 100px;
+    }
+    #Login-button{
+        width: 80px;
+        height: 25px;
+        font-size: 9px;
+
+    }
+    #Signup-Button{
+        width: 80px;
+        height: 25px;
+        font-size: 9px;
+    }
+    #CartImage{
+        width: 20px;
+        margin-top: 5px;
+    }
+    .CartCount{
+        width: 10px;
+        height: 10px;
+        font-size: 9px;
+        margin-top: -20px;
+        margin-left: -40px;
+    }
+    .buttons-header{
+        width: 290px;
+        gap: 8px;
+    }
+    .LogoName img{
+    width: 45px;
+    height: auto;
+    object-fit: cover;
+    padding-top: 3px;
+    }
+    .Logoname-Container span{
+    display: inline-block;
+    font-family: poppins;
+    font-size: 9px;
+    margin: 0;
+}
+}
+@media(max-width:800px){
+    .buttons-header{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    .auth-buttons {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .auth-buttons.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .LogoName{
+         font-size: 13px;
+         font-weight: 500;
+     }
+    .Logoname-Container span{
+        font-size: 9px;
+        margin: 0;
+    }
+     nav a{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .LogoName img{
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    padding-top: 3px;
+    }
+    #LogOut-Button{
+        width: 60px;
+        height: 18px;
+        font-size: 8px;  
+        margin-left: 0px;
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    
+
+    .buttons-header{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    .auth-buttons {
+        position: absolute;
+        top: 40px;
+        right: 0;
+        flex-direction: column;
+        background: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .auth-buttons.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .LogoName{
+         font-size: 13px;
+         font-weight: 500;
+     }
+    .Logoname-Container span{
+        font-size: 9px;
+        margin: 0;
+    }
+     nav a{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .LogoName img{
+    width: 40px;
+    height: auto;
+    object-fit: cover;
+    padding-top: 3px;
+    }
+    #LogOut-Button{
+        width: 60px;
+        height: 18px;
+        font-size: 8px;  
+        
+    }
+    .Logoname-Container span{
+        font-size: 9px;
+        margin: 0;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .Header {
+    width: 80%;
+    display: flex;
+    top: 10px;          
+    left: 50%;         
+    padding: 10px;
+    padding-left: 20px;
+    }
+
+  .buttons-header{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+    .auth-buttons {
+        position: absolute;
+        top: 40px;
+        right: -50px;
+        flex-direction: column;
+        background: white;
+        padding: 5px;
+        border-radius: 10px;
+        display: none;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    }
+
+    .auth-buttons.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .LogoName{
+         font-size: 13px;
+         font-weight: 500;
+         gap: 5px;
+     }
+    .Logoname-Container span{
+        font-size: 8px;
+        margin: 0;
+    }
+     nav a{
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .LogoName img{
+    width: 36px;
+    height: auto;
+    object-fit: cover;
+    padding-top: 3px;
+    }
+    .Logoname-Container{
+    display: none;
+    flex-direction: column; 
+    }
+    #Login-button{
+        width: 70px;
+        height: 20px;
+        font-size: 8px;
+
+    }
+    #Signup-Button{
+        width: 70px;
+        height: 20px;
+        font-size: 8px;
+    }
+    #CartImage{
+        width: 15px;
+        margin-top: 5px;
+    }
+    .burger{
+        font-size: 14px;
+    }
+}

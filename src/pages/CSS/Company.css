@@ -1,0 +1,144 @@
+.Company-Main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.Cover-Company{
+    width: auto;
+    height: 700px;
+    background-size: cover;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-position: center 40%;
+   
+}
+    #Bold{
+        font-family: poppins;
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        margin: 0;
+        padding-left: 250px;
+        padding-top: 20px;
+    }
+    .Cover-Company p{
+        font-family: poppins;
+        font-size: 20px;
+        font-weight: 400;
+        color: white;
+        margin: 0;
+        padding-left: 260px;
+    }
+
+.Info-container{
+    height: 300px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    margin-top: 50px;
+}
+    .Left-logo{
+        height: 300px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Left-logo img{
+        width: 250px;
+        object-fit: cover;
+        
+    }
+    
+    .right-info{
+        height: 300px;
+        width: 800px;
+        padding: 5px;
+        font-family: poppins;
+        font-size: 15px;
+    }
+    .right-info h1{
+
+    }
+
+    /* CONTAINER */
+.Fiveimage_container {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* important for different heights */
+    gap: 10px;
+
+    border-bottom: 2px solid black;
+}
+
+/* ALL IMAGES */
+.Fiveimage_container img {
+    width: 90px;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 10px;
+    border: 2px solid white;
+
+    transition: width 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+/* INDIVIDUAL IMAGE HEIGHTS */
+#img1 {
+    height: 50%;
+}
+
+#img2 {
+    height: 80%;
+}
+
+#img3 {
+    height: 100%;
+}
+
+#img4 {
+    height: 80%;
+}
+
+#img5 {
+    height: 50%;
+}
+
+/* HOVER EFFECT */
+.Fiveimage_container img:hover {
+    width: 25%;
+}
+
+.Team-Comtainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: poppins;
+    flex-direction: column;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+.Team-Comtainer h1{
+
+}
+
+.Team-Comtainer p{
+    margin-left: 20%;
+    margin-right: 20%;
+}

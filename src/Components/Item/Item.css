@@ -1,0 +1,274 @@
+    .Item-Card{
+        width: 200px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    
+    .Item-Card img{
+        width: 200px;
+        height: 300px;
+        object-fit: cover;
+    }
+    #Product-Name{
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        color: black;
+    }
+    #Price{
+        font-family: poppins;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 5px;
+        color: black;
+    }
+.Buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: 35px;
+
+}
+
+
+    #AddTocart {
+    margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: #f0eded;
+    color: rgb(5, 5, 5);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+   
+}
+
+    /* HOVER */
+    #AddTocart:hover {
+        background-color: #fd8700d3;
+        color: rgb(250, 255, 245);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+    }
+
+    /* CLICK */
+    #AddTocart:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+    #Buy{
+        margin-top: 10px;
+    width: 90px;
+    height: 30px;
+    background-color: #f0eded;
+    color: rgb(5, 5, 5);
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+    margin-right: 5px;
+    overflow: hidden;
+    transition: 
+        background-color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+    #Buy:hover {
+        background-color: #40b84a;
+        color: rgb(244, 248, 240);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+
+        #Buy:active {
+        transform: translateY(0);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        }
+
+@media(max-width:1024px){
+        .Item-Card{
+        width: 200px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .Item-Card img{
+        width: 180px;
+        height: 280px;
+        object-fit: cover;
+    }
+    #Product-Name{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+    }
+    #Price{
+        font-family: poppins;
+        font-size: 13px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+    }
+.Buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+    #AddTocart {
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+}
+
+    #Buy{
+    margin-top: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+    }
+
+}
+@media(max-width:786px){
+     .Item-Card{
+        width: 180px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .Item-Card img{
+        width: 170px;
+        height: 270px;
+        object-fit: cover;
+    }
+    #Product-Name{
+        font-size: 11px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+    }
+    #Price{
+        font-family: poppins;
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+    }
+.Buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+    #AddTocart {
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+}
+
+    #Buy{
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+    }
+}
+@media(max-width:480px){
+.Item-Card{
+        width: 170px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .Item-Card img{
+        width: 160px;
+        height: 260px;
+        object-fit: cover;
+    }
+    #Product-Name{
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+    }
+    #Price{
+        font-family: poppins;
+        font-size: 11px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 5px;
+    }
+.Buttons-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+    #AddTocart {
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+}
+
+    #Buy{
+    margin-top: 10px;
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 9px;
+    margin-right: 5px;
+    }
+}

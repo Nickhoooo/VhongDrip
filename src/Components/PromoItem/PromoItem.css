@@ -1,0 +1,490 @@
+.Maincontainer-PI{
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    display: flex;
+    gap: 50px;
+}
+    .Left-PI{
+        width: 300px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(233, 235, 238);
+        border-radius: 30px;      
+        box-shadow: 0 20px 80px 20px rgba(0, 0, 0, 0.4);
+        flex-shrink: 0;
+    }
+        .Left-PI img{
+            width: 320px;
+            position: relative;
+            top: -30px;
+        }
+
+    .Right-PI{
+        font-family: poppins;
+    }    
+    #Text1{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    #Promo-deal{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 300px;
+        margin-top: 5px;
+    }
+    #Promo-deal span{
+        color: red;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #Newprice{
+        margin: 0;
+        color: red;
+        font-size: 15px;
+        font-weight: 500px;
+        margin-top: 10px;
+    }
+    #Oldprice{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500px;
+    }
+
+    .Diplay-PI{
+        display: flex;
+        gap: 20px;
+    }
+        .Left-display{
+            height: 120px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(233, 235, 238);
+            border-radius: 30px;      
+            box-shadow: 0 20px 80px 20px rgba(0, 0, 0, 0.4);
+            margin-top: 25px;
+            position: relative;
+        }
+            .Left-display img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transform: rotate(60deg);
+                position: absolute;
+                right: -5px;
+            }
+
+        .Right-display{
+            font-family: poppins;
+        }    
+             #Name-product{
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 30px;
+             }
+             #Discount{
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 5px;
+             }
+
+             .Right-display button{
+                width: 100px;
+                height: 30px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+             }
+             #Promocartbtn{
+                color: black;
+                background-color: aliceblue;
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+                overflow: hidden;
+                transition: 
+                    background-color 0.3s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease;
+             }
+
+                #Promocartbtn:hover {
+                background-color: #fd8700d3;
+                color: rgb(250, 255, 245);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            }
+
+            /* CLICK */
+            #Promocartbtn:active {
+                transform: translateY(0);
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            }
+
+             #PromoBuybtn{
+                color: aliceblue;
+                background-color: rgb(49, 49, 49);
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+                overflow: hidden;
+                transition: 
+                    background-color 0.3s ease,
+                    transform 0.2s ease,
+                    box-shadow 0.2s ease;
+             }
+             #PromoBuybtn:hover{
+                background-color: #40b84a;
+                color: rgb(244, 248, 240);
+                transform: translateY(-2px);
+                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+             }
+             #PromoBuybtn:active {
+                transform: translateY(0);
+                box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+                }
+
+@media(max-width:1024px){
+
+    .Maincontainer-PI{
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    display: flex;
+    gap: 50px;
+}
+    .Left-PI{
+        width: 280px;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .Left-PI img{
+            width: 310px;
+            position: relative;
+            top: -30px;
+        }
+
+    .Right-PI{
+        font-family: poppins;
+    }    
+    #Text1{
+        margin: 0;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    #Promo-deal{
+        margin: 0;
+        font-size: 13px;
+        font-weight: 300px;
+        margin-top: 5px;
+    }
+    #Promo-deal span{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    #Newprice{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500px;
+        margin-top: 10px;
+    }
+    #Oldprice{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500px;
+    }
+
+    .Diplay-PI{
+        display: flex;
+        gap: 20px;
+    }
+        .Left-display{
+            height: 120px;
+            width: 120px;
+            display: flex;
+            border-radius: 30px;      
+            margin-top: 25px;
+            position: relative;
+        }
+            .Left-display img{
+                width: 100%;
+                height: 100%;
+                right: -5px;
+            }
+
+        .Right-display{
+            font-family: poppins;
+        }    
+             #Name-product{
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 30px;
+             }
+             #Discount{
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 5px;
+             }
+
+             .Right-display button{
+                width: 100px;
+                height: 30px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+             }
+             #Promocartbtn{
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+             }
+
+             #PromoBuybtn{
+                color: aliceblue;
+                background-color: rgb(49, 49, 49);
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+             }
+
+
+}
+@media(max-width:786px){
+    .Maincontainer-PI{
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+}
+    .Left-PI{
+        width: 240px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .Left-PI img{
+            width: 270px;
+            position: relative;
+            top: -30px;
+        }
+
+    .Right-PI{
+        font-family: poppins;
+        width: 400px;
+    }    
+    #Text1{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    #Promo-deal{
+        margin: 0;
+        font-size: 11px;
+        font-weight: 300px;
+        margin-top: 5px;
+    }
+    #Promo-deal span{
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #Newprice{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500px;
+        margin-top: 10px;
+    }
+    #Oldprice{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 500px;
+    }
+
+    .Diplay-PI{
+        display: flex;
+        gap: 20px;
+    }
+        .Left-display{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            border-radius: 20px;      
+            margin-top: 25px;
+            position: relative;
+        }
+            .Left-display img{
+                width: 100%;
+                height: 100%;
+                right: -5px;
+            }
+
+        .Right-display{
+            font-family: poppins;
+        }    
+             #Name-product{
+                font-size: 15px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 30px;
+             }
+             #Discount{
+                font-size: 13px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 5px;
+             }
+
+             .Right-display button{
+                width: 80px;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+             }
+             #Promocartbtn{
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+             }
+
+             #PromoBuybtn{
+                color: aliceblue;
+                background-color: rgb(49, 49, 49);
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 10px;
+                margin-right: 5px;
+             }
+   
+}
+
+
+@media(max-width:480px){
+    .Maincontainer-PI{
+    width: 100%;
+    max-width: 800px;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+}
+    .Left-PI{
+        width: 250px;
+        height: 250px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Right-PI{
+        font-family: poppins;
+        width: 350px;
+    }    
+    #Text1{
+        margin: 0;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    #Promo-deal{
+        margin: 0;
+        font-size: 10px;
+        font-weight: 300px;
+        margin-top: 5px;
+    }
+    #Promo-deal span{
+        font-size: 13px;
+        font-weight: 400;
+    }
+    #Newprice{
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500px;
+        margin-top: 10px;
+    }
+    #Oldprice{
+        margin: 0;
+        font-size: 10px;
+        font-weight: 500px;
+    }
+
+    .Diplay-PI{
+        display: flex;
+        gap:20px;
+    }
+        .Left-display{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            border-radius: 20px;      
+            margin-top: 25px;
+            position: relative;
+        }
+            .Left-display img{
+                width: 100%;
+                height: 100%;
+                right: -5px;
+            }
+
+        .Right-display{
+            font-family: poppins;
+        }    
+             #Name-product{
+                font-size: 14px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 35px;
+             }
+             #Discount{
+                font-size: 12px;
+                font-weight: 400;
+                margin: 0;
+                margin-top: 5px;
+             }
+
+             .Right-display button{
+                width: 70px;
+                height: 25px;
+                border: none;
+                border-radius: 30px;
+                margin-top: 10px;
+             }
+             #Promocartbtn{
+                border-radius: 30px;
+                border: none;
+                cursor: pointer;
+                font-size: 9px;
+                margin-right: 5px;
+             }
+
+             #PromoBuybtn{
+                color: aliceblue;
+                background-color: rgb(49, 49, 49);
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 9px;
+                margin-right: 5px;
+             }
+}
