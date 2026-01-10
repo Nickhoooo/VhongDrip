@@ -12,11 +12,7 @@ function Hero(){
                 
                 <Link to={'/shop'}>
                     <button>Shop Now</button>
-                </Link>
-                
-                
-                
-                
+                </Link>     
             </div>
             <div className="Hero-model">
                 <img src={HeroModel} alt="" />

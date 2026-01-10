@@ -14,7 +14,7 @@ function ProductDetails(){
   
 
     useEffect(() => {
-       fetch(`https://vhongdrip.free.nf/api/getProductbyId.php?id=${id}`)
+       fetch(`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/api/getProductbyId.php?id=${id}`)
         .then(res => res.json())
         .then(data => setProduct(data))
         .catch(err => console.log("ERROR: ", err));
@@ -39,16 +39,16 @@ function ProductDetails(){
             <div className="MainProduct1">
                 <div className="MainProduct1-left">
                     <div className="display-4">
-                        <img src={`https://vhongdrip.free.nf/images/${product.image}`} alt={product.name} />
-                        <img src={`https://vhongdrip.free.nf/images/${product.image}`} alt={product.name} />
-                        <img src={`https://vhongdrip.free.nf/images/${product.image}`} alt={product.name} />
-                        <img src={`https://vhongdrip.free.nf/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
 
                      
                     </div>
                     <div className="display-main">
 
-                        <img src={`https://vhongdrip.free.nf/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
 
                     </div>
                 </div>

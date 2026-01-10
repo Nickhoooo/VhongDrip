@@ -29,7 +29,7 @@ function PromoItem({ promo }){
     return(
         <div className="Maincontainer-PI">
             <div className="Left-PI">
-                <img src={`https://vhongdrip.free.nf/images/${promo.model}`} alt={promo.name} />
+                <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${promo.model}`} alt={promo.name} />
             </div>
             
             <div className="Right-PI">
@@ -41,7 +41,7 @@ function PromoItem({ promo }){
                 <p id="Oldprice"> Original price ₱{promo.oldprice}</p>
                 <div className="Diplay-PI">
                     <div className="Left-display">
-                        <img src={`https://vhongdrip.free.nf/images/${promo.display}`} alt={promo.name} />
+                        <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${promo.display}`} alt={promo.name} />
                     </div>
                     <div className="Right-display">
                         <p id="Name-product">{promo.name}</p>
