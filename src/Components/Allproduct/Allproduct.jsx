@@ -15,7 +15,7 @@ function Allproduct(){
         fetch ("https://vhongdrip.free.nf/api/getProducts.php")
         .then(res => res.json())
         .then(data => setProducts(data))
-        .catch(err => console.log("ERROR: ", err));
+        .catch(err => console.log("ERROR: ", err)); 
     }, []);
 
     return(

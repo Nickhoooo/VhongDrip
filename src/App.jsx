@@ -21,7 +21,15 @@ import Signuppage from './pages/Signuppage.jsx';
 import Cart from "./pages/Cart.jsx";
 import PromoDetails from './Components/PromoDetails/PromoDetails.jsx';
 
+  const express = require('express');
+  const cors = require('cors');
 
+  const app = express();
+
+  app.use(cors({
+    origin: 'https://vhongdrip-17or.vercel.app',
+  }));
+  
 function App() {
   return (
     <>
