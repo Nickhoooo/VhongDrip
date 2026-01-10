@@ -46,7 +46,7 @@ function Signuppage(){
     formData.append("password", password);
     formData.append("register", 1);
 
-    const res = await fetch("http://localhost/VhongWebsite/backend/api/signup.php", {
+    const res = await fetch("https://vhongdrip.free.nf/api/signup.php", {
         method: "POST",
         body: formData
     });

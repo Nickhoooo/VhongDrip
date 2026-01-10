@@ -22,7 +22,7 @@ function Loginpage(){
         const formData = new FormData(e.target);
         formData.append("login", 1);
 
-        const res = await fetch("http://localhost/VhongWebsite/backend/api/login.php", {
+        const res = await fetch("https://vhongdrip.free.nf/api/login.php", {
             method: "POST",
             credentials: "include", 
             body: formData

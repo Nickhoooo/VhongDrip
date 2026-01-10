@@ -37,7 +37,7 @@ function Cart() {
         setMessage("");
 
         try {
-            const response = await fetch("http://localhost/VhongWebsite/backend/api/checkout.php", {
+            const response = await fetch("https://vhongdrip.free.nf/api/checkout.php", {
                 method: "POST",
                 credentials: 'include',
                 headers: {
