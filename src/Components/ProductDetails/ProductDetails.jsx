@@ -1,6 +1,6 @@
 import "./ProductDetails.css";
 import StarRate from "../assets/star.png";
-import StarNull from "../assets/StarNull.png";
+import StarNull from "../assets/starnull.png";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useContext } from "react";
