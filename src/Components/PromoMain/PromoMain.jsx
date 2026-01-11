@@ -18,7 +18,7 @@ function PromoMain(){
     const [promo, setPromo] = useState([]);
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/getPromoproduct.php`)
+        fetch("https://vhongdrip.free.nf/api/getPromoproduct.php")
         .then(res => res.json())
         .then(data => setPromo(data))
         .catch(err => console.log("ERROR: ", err));

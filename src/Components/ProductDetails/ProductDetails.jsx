@@ -14,7 +14,7 @@ function ProductDetails(){
   
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/getProductbyId.php?id=${id}`)
+       fetch(`https://vhongdrip.free.nf/api/getProductbyId.php?id=${id}`)
         .then(res => res.json())
         .then(data => setProduct(data))
         .catch(err => console.log("ERROR: ", err));
@@ -39,16 +39,16 @@ function ProductDetails(){
             <div className="MainProduct1">
                 <div className="MainProduct1-left">
                     <div className="display-4">
-                        <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
-                        <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
-                        <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
-                        <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
+                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
 
                      
                     </div>
                     <div className="display-main">
 
-                        <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
+                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
 
                     </div>
                 </div>

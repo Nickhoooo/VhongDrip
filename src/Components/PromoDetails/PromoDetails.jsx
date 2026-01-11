@@ -23,7 +23,7 @@ function PromoDetails() {
   }, []);
 
   useEffect(() => {
-     fetch(`${import.meta.env.VITE_API_URL}/getPromoproduct.php?id=${id}`)
+    fetch(`https://vhongdrip.free.nf/api/getPromoproduct.php?id=${id}`)
       .then(res => res.json())
       .then(data => {
         console.log(data); // check structure
@@ -52,7 +52,7 @@ function PromoDetails() {
             {promoImages.map((img, index) => (
               <img
                 key={index}
-                src={`${import.meta.env.VITE_API_URL.replace('/api', '')}/images/${img}`}
+                src={`http://localhost/VhongWebsite/backend/images/${img}`}
                 alt={promo.name}
               />
             ))}
@@ -60,7 +60,7 @@ function PromoDetails() {
 
           <div className="display-main">
             <img
-              src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${promo.model}`}
+              src={`http://localhost/VhongWebsite/backend/images/${promo.model}`}
               alt={promo.name}
             />
           </div>

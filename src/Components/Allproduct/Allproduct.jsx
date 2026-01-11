@@ -12,10 +12,10 @@ function Allproduct(){
     } 
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/getProducts.php`)
+        fetch ("https://vhongdrip.free.nf/api/getProducts.php")
         .then(res => res.json())
         .then(data => setProducts(data))
-        .catch(err => console.log("ERROR: ", err)); 
+        .catch(err => console.log("ERROR: ", err));
     }, []);
 
     return(
