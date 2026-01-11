@@ -24,7 +24,7 @@ function Item({ product }){
 
     return(
         <div className="Item-Card">
-            <img src={`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/images/${product.image}`} alt={product.name} />
+            <img  src={`${import.meta.env.VITE_BACKEND_URL}/images/${product.image}`} alt={product.name} />
             <p id="Product-Name">{product.name}</p>
             <p id="Price">₱{product.price}</p>
             <div className="Buttons-container">

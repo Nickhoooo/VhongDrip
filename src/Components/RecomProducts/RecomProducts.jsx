@@ -9,14 +9,13 @@ function RecomProduct(){
     const [currentProduct, setCurrentProduct] = useState({});
 
     useEffect(() => {
-   
-        fetch("https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/api/getProducts.php")
+        fetch(`${import.meta.env.VITE_API_URL}/getProducts.php`)
         .then(res => res.json())
         .then(data => setProducts(data))
         .catch(err => console.log("ERROR: ", err));
 
-
-        fetch(`https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/api/getProductbyId.php?id=${id}`)
+        
+        fetch(`${import.meta.env.VITE_API_URL}/getProductbyId.php?id=${id}`)
         .then(res => res.json())
         .then(data => setCurrentProduct(data))
         .catch(err => console.log("ERROR: ", err));

@@ -46,7 +46,7 @@ function Signuppage(){
     formData.append("password", password);
     formData.append("register", 1);
 
-    const res = await fetch("https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/api/signup.php", {
+    const res = await fetch(`${import.meta.env.VITE_API_URL}/signup.php`, {
         method: "POST",
         credentials: "include", 
         body: formData

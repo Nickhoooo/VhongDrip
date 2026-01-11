@@ -18,7 +18,7 @@ function PromoMain(){
     const [promo, setPromo] = useState([]);
 
     useEffect(() => {
-        fetch("https://vhongs-backend-ffm1k8ldm-nicos-projects-1e62f5d3.vercel.app/api/getPromoproduct.php")
+        fetch(`${import.meta.env.VITE_API_URL}/getPromoproduct.php`)
         .then(res => res.json())
         .then(data => setPromo(data))
         .catch(err => console.log("ERROR: ", err));
