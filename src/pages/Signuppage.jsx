@@ -46,12 +46,10 @@ function Signuppage(){
     formData.append("password", password);
     formData.append("register", 1);
 
-    const res = await fetch(`${import.meta.env.VITE_API_URL}/signup.php`, {
+    const res = await fetch("https://vhongdrip.free.nf/api/signup.php", {
         method: "POST",
-        credentials: "include", 
         body: formData
     });
-
 
     const data = await res.json();
 

@@ -37,16 +37,16 @@ function Cart() {
         setMessage("");
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/checkout.php`, {
-            method: "POST",
-            credentials: 'include',
-            headers: {
-                "Content-Type": "application/x-www-form-urlencoded",
-            },
-            body: new URLSearchParams({
-                total: cartTotal
-            })
-        });
+            const response = await fetch("https://vhongdrip.free.nf/api/checkout.php", {
+                method: "POST",
+                credentials: 'include',
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded",
+                },
+                body: new URLSearchParams({
+                    total: cartTotal
+                })
+            });
 
             const data = await response.json();
             setMessage(data.message || "Checkout successful!");
@@ -75,7 +75,7 @@ function Cart() {
   <div className="CartItems-container" key={item.id + (item.promo?.id || '')}>
    
     <img
-      src={`${import.meta.env.VITE_BACKEND_URL}/images/${item.promo ? item.promo.display : item.image}`}
+      src={`https://vhhongdrip.free.nf/images/${item.promo ? item.promo.display : item.image}`}
       width="100"
       alt={item.name}
     />

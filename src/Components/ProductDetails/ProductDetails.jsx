@@ -39,16 +39,16 @@ function ProductDetails(){
             <div className="MainProduct1">
                 <div className="MainProduct1-left">
                     <div className="display-4">
-                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
-                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
-                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
-                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhhongdrip.free.nf/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhhongdrip.free.nf/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhhongdrip.free.nf/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhhongdrip.free.nf/images/${product.image}`} alt={product.name} />
 
                      
                     </div>
                     <div className="display-main">
 
-                        <img src={`http://localhost/VhongWebsite/backend/images/${product.image}`} alt={product.name} />
+                        <img src={`https://vhhongdrip.free.nf/images/${product.image}`} alt={product.name} />
 
                     </div>
                 </div>

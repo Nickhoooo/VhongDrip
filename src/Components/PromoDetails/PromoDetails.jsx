@@ -52,7 +52,7 @@ function PromoDetails() {
             {promoImages.map((img, index) => (
               <img
                 key={index}
-                src={`http://localhost/VhongWebsite/backend/images/${img}`}
+                src={`https://vhhongdrip.free.nf/images/${img}`}
                 alt={promo.name}
               />
             ))}
@@ -60,7 +60,7 @@ function PromoDetails() {
 
           <div className="display-main">
             <img
-              src={`http://localhost/VhongWebsite/backend/images/${promo.model}`}
+              src={`https://vhhongdrip.free.nf/images/${promo.model}`}
               alt={promo.name}
             />
           </div>
