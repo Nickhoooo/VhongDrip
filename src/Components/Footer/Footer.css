@@ -223,15 +223,15 @@
     font-family: poppins;
 }
     .Footer-container hr{
-        width: 400px;
+        width: 340px;
         height: 1px;
     }
         .Company-Name{
-            font-size: 18px;
+            font-size: 16px;
         }
         .Company-Name img{
-            height: 50px;
-            width: 50px;
+            height: 45px;
+            width: 45px;
             margin-right: 20px;
         }
     .About-us{
@@ -240,10 +240,10 @@
     }
         .Navbar{
             font-weight: 400px;
-            gap: 50px;
+            gap: 40px;
         }
         .Navbar a {
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 400px;
         }
       
@@ -251,7 +251,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 18px;
     }
     .SocialMedia img {
         width: 15px;

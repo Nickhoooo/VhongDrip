@@ -164,7 +164,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         row-gap: 90px;
-        gap: 50px;
+        gap: 20px;
         align-self: center;
     }
    

@@ -1,7 +1,13 @@
 import "../pages/CSS/Company.css";
 import Cover from "../Components/assets/Cover-Photo.avif";
 import BigLogo from "../Components/assets/BigLogo.png";
+import Jhiro from "../Components/assets/Jhiro.png";
+import Nico from "../Components/assets/Dumayas.png";
+import Gomez from "../Components/assets/Gomez.jpg";
+import Artiaga from "../Components/assets/Artiaga.jpg";
+import Apilado from "../Components/assets/Apilado.jpg";
 import { useEffect } from "react";
+
 function Company(){
 
     useEffect(() => {
@@ -41,16 +47,127 @@ function Company(){
         </div>
 
         <div className="Fiveimage_container">
-            <img src={BigLogo} alt="" id="img1" />
-            <img src={BigLogo} alt="" id="img2" />
-            <img src={BigLogo} alt="" id="img3" />
-            <img src={BigLogo} alt="" id="img4" />
-            <img src={BigLogo} alt="" id="img5" />
+             {/**First card */}
+            <div className="card">
+                <div className="content">
+                <div className="front">
+                    <img
+                        src={Jhiro}
+                        alt="front"
+                        className="img"
+                    />
+                    <div className="front-content">
+                        <div className="title">
+                        <p>Jhiro</p>
+                        </div>
+                        <div className="card-footer">Footer</div>
+                    </div>
+                </div>
+
+                    <div className="back">
+                        <div className="back-content">UI / UX Designer</div>
+                        <div className="glow" />
+                    </div>
+                </div>  
+            </div>
+             {/**Second card */}
+            <div className="card">
+                <div className="content">
+                <div className="front">
+                    <img
+                        src={Apilado}
+                        alt="front"
+                        className="img"
+                    />
+                    <div className="front-content">
+                        <div className="title">
+                        <p>Apilado</p>
+                        </div>
+                        <div className="card-footer">Footer</div>
+                    </div>
+                </div>
+
+                    <div className="back">
+                        <div className="back-content">Backend Developer Auth Security</div>
+                        <div className="glow" />
+                    </div>
+                </div>  
+            </div>
+            {/**Third card */}
+            <div className="card">
+                <div className="content">
+                <div className="front">
+                    <img
+                        src={Artiaga}
+                        alt="front"
+                        className="img"
+                    />
+                    <div className="front-content">
+                        <div className="title">
+                        <p>Artiaga</p>
+                        </div>
+                        <div className="card-footer">Footer</div>
+                    </div>
+                </div>
+
+                    <div className="back">
+                        <div className="back-content">Backend Developer API</div>
+                        <div className="glow" />
+                    </div>
+                </div>  
+            </div>
+            {/**fourth card */}
+            <div className="card">
+                <div className="content">
+                <div className="front">
+                    <img
+                        src={Gomez}
+                        alt="front"
+                        className="img"
+                    />
+                    <div className="front-content">
+                        <div className="title">
+                        <p>Gomez</p>
+                        </div>
+                        <div className="card-footer">Footer</div>
+                    </div>
+                </div>
+
+                    <div className="back">
+                        <div className="back-content">Frontend Developer Logic Integration</div>
+                        <div className="glow" />
+                    </div>
+                </div>  
+            </div>
+            {/**panglima card */}
+            <div className="card">
+                <div className="content">
+                <div className="front">
+                    <img
+                        src={Nico}
+                        alt="front"
+                        className="img"
+                    />
+                    <div className="front-content">
+                        <div className="title">
+                        <p>Dumayas</p>
+                        </div>
+                        <div className="card-footer">Footer</div>
+                    </div>
+                </div>
+
+                    <div className="back">
+                        <div className="back-content">Frontend Developer Layout Components</div>
+                        <div className="glow" />
+                    </div>
+                </div>  
+            </div>
+
 
         </div>
 
 
-        </div>
+    </div>
     );
 }
 export default Company;

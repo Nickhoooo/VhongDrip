@@ -348,7 +348,7 @@ nav a :hover{
 /* Small mobile */
 @media (max-width: 480px) {
     .Header {
-    width: 80%;
+    width: 75%;
     display: flex;
     top: 10px;          
     left: 50%;         
@@ -423,5 +423,16 @@ nav a :hover{
     }
     .burger{
         font-size: 14px;
+    }
+    #LogOut-Button{
+        width: 40px;
+        height: 18px;
+        background-color: #2c2a2a;
+        color: rgb(238, 230, 230);
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        font-size: 7px;
+
     }
 }

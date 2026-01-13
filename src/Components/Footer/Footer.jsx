@@ -27,8 +27,7 @@ function Footer(){
             </div>
             <hr />
             <div className="Owner">
-                <p id="Copyright">Copyright @ 2025 All Right Reserved</p>
-                <p id="DesignBy">Designer: @Neko</p>
+                <p id="Copyright">Copyright @ 2026 All Right Reserved</p>
             </div>
         </div>
     );

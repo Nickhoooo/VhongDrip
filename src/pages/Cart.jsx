@@ -75,7 +75,7 @@ function Cart() {
   <div className="CartItems-container" key={item.id + (item.promo?.id || '')}>
    
     <img
-      src={`https://vhhongdrip.free.nf/images/${item.promo ? item.promo.display : item.image}`}
+      src={`https://vhongdrip.free.nf/images/${item.promo ? item.promo.display : item.image}`}
       width="100"
       alt={item.name}
     />

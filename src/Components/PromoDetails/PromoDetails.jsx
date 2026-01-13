@@ -23,7 +23,7 @@ function PromoDetails() {
   }, []);
 
   useEffect(() => {
-    fetch(`https://vhongdrip.free.nf/api/getPromoproduct.php?id=${id}`)
+    fetch(`http://localhost/VhongWebsite/backend/api/getPromoproduct.php?id=${id}`)
       .then(res => res.json())
       .then(data => {
         console.log(data); // check structure
@@ -52,7 +52,7 @@ function PromoDetails() {
             {promoImages.map((img, index) => (
               <img
                 key={index}
-                src={`https://vhhongdrip.free.nf/images/${img}`}
+                src={`https://vhongdrip.free.nf/images/${img}`}
                 alt={promo.name}
               />
             ))}
@@ -60,7 +60,7 @@ function PromoDetails() {
 
           <div className="display-main">
             <img
-              src={`https://vhhongdrip.free.nf/images/${promo.model}`}
+              src={`https://vhongdrip.free.nf/images/${promo.model}`}
               alt={promo.name}
             />
           </div>
